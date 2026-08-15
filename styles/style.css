@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-Black.woff2') format('woff2'),
+        url('fonts/Rubik-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+}
+
+.container {
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.sidebar {
+    border: 2px solid grey;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.head {
+    border: 2px solid gold;
+}
+
+.content {
+    border: 2px solid ;
+}
