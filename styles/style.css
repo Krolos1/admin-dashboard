@@ -10,6 +10,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -21,13 +22,13 @@ body {
 .container {
     max-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1.2fr 5fr;
 }
 
 .sidebar {
-    border: 2px solid grey;
     grid-area: 1 / 1 / 3 / 2;
+    background-color: #2065aa;
 }
 
 .head {
@@ -36,4 +37,57 @@ body {
 
 .content {
     border: 2px solid ;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 18px;
+    margin-top: 14px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+}
+
+.brand-logo {
+    height: 5rem;
+    width: 5rem;
+}
+
+.brand-name {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 25px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.nav-icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-left: 8px;
+}
+
+.nav-text {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.sidebar-items-group-two {
+    margin-top: 80px;
+}
+
+.nav-item:hover {
+    background-color: rgb(255 255 255 / 0.1);
 }
